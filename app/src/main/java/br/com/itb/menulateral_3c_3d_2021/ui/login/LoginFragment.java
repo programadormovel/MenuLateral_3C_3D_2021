@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -56,6 +57,7 @@ public class LoginFragment extends Fragment {
         final EditText passwordEditText = view.findViewById(R.id.password);
         final Button loginButton = view.findViewById(R.id.login);
         final ProgressBar loadingProgressBar = view.findViewById(R.id.loading);
+        final TextView botaoRegistro = view.findViewById(R.id.btn_registro);
 
         loginViewModel.getLoginFormState().observe(getViewLifecycleOwner(), new Observer<LoginFormState>() {
             @Override
@@ -135,6 +137,18 @@ public class LoginFragment extends Fragment {
 
             }
         });
+
+        // TROCA DE JANELA INTERNA OU FRAGMENTO
+        botaoRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Acionar ação de navegação
+                NavHostFragment.findNavController(LoginFragment.this)
+                        .navigate(R.id.action_nav_psg_to_nav_registro);
+
+            }
+        });
+
     }
 
     private void updateUiWithUser(LoggedInUserView model) {

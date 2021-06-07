@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MenuLateral_3C_3D_2021</string>
+    <string name="navigation_drawer_open">Abrir Navegação Lateral</string>
+    <string name="navigation_drawer_close">Fechar Navegação Lateral</string>
+    <string name="nav_header_title">3C 3D Menu Lateral</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Cabeçalho de Navegação</string>
+    <string name="action_settings">Configurações</string>
+    <string name="menu_home">Início</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_psg">PSG</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entre ou Registre-se</string>
+    <string name="action_sign_in_short">Entre</string>
+    <string name="action_register">Registre-se</string>
+    <string name="welcome">Bem-vindo!</string>
+    <string name="invalid_username">Nome inválido</string>
+    <string name="invalid_password">Senha precisa ter mais de 5 caracteres</string>
+    <string name="login_failed">Falha ao logar</string>
+    <string name="action_name">Nome</string>
+    <string name="confirm_password">Confirmar Senha</string>
+</resources>

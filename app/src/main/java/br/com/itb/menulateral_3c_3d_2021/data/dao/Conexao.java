@@ -24,9 +24,14 @@ public class Conexao {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
             // Preparar string de conexão
+            // string remota
+            String strConn = "jdbc:jtds:sqlserver://PRAP3AB.mssql.somee.com;" +
+                    "databaseName=PRAP3AB;user=teste3AB;password=master33##;";
+
+            /*// string local
             String strConn = "jdbc:jtds:sqlserver://192.168.0.200;" +
                     "databaseName=PRAP3_2021;user=sa;password=123456;";
-
+*/
             // Criar conexão com o banco
             conexao = DriverManager.getConnection(strConn);
         }catch (SQLException | ClassNotFoundException e){

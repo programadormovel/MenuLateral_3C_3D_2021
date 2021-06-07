@@ -27,5 +27,15 @@
         android:id="@+id/nav_psg"
         android:name="br.com.itb.menulateral_3c_3d_2021.ui.login.LoginFragment"
         android:label="@string/menu_psg"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_psg_to_nav_registro"
+            app:destination="@id/nav_registro" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_registro"
+        android:name="br.com.itb.menulateral_3c_3d_2021.RegistroFragment"
+        android:label="@string/action_register"
+        tools:layout="@layout/registro_fragment" />
 </navigation>
